@@ -32,7 +32,7 @@ class NewDeck extends React.Component {
             [deckTitle]: deckObject
         }))
         this.setState({ title: '' })
-        this.props.navigation.navigate('DeckList')
+        this.props.navigation.navigate('DeckView', {deck: deckObject})
     }
 
     render() {
